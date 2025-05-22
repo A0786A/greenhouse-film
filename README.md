@@ -1,37 +1,28 @@
 # Greenhouse Film Website
 
-A modern, responsive website for a greenhouse film company built with Next.js 14, TypeScript, and Tailwind CSS.
+A modern website for Greenhouse Film, built with Next.js and featuring an AI-powered chatbot.
 
 ## Features
 
-- Responsive design that works on all devices
-- Modern UI with smooth animations
-- Server-side rendering for better performance
-- TypeScript for type safety
-- Tailwind CSS for styling
-- Dynamic product pages
+- Responsive design
+- AI-powered chatbot for customer support
+- Product catalog
 - Contact form
-- Loading states and error handling
-
-## Tech Stack
-
-- [Next.js 14](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [React](https://reactjs.org/)
+- Modern UI with Tailwind CSS
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18.17 or later
-- npm or yarn
+- Node.js 18+ installed
+- npm or yarn package manager
+- OpenAI API key
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/greenhouse-film.git
+git clone https://github.com/A0786A/greenhouse-film.git
 cd greenhouse-film
 ```
 
@@ -42,49 +33,41 @@ npm install
 yarn install
 ```
 
-3. Run the development server:
+3. Set up environment variables:
+   - Copy `.env.example` to `.env.local`
+   - Add your OpenAI API key to `.env.local`
+
+4. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```
+OPENAI_API_KEY=your-api-key-here
+```
 
 ## Project Structure
 
-```
-greenhouse-film/
-├── src/
-│   ├── app/
-│   │   ├── about/
-│   │   ├── contact/
-│   │   ├── products/
-│   │   ├── layout.tsx
-│   │   ├── page.tsx
-│   │   ├── error.tsx
-│   │   ├── loading.tsx
-│   │   └── not-found.tsx
-│   ├── components/
-│   │   ├── Navbar.tsx
-│   │   └── Footer.tsx
-│   └── styles/
-│       └── globals.css
-├── public/
-│   └── images/
-├── package.json
-├── tsconfig.json
-├── tailwind.config.js
-└── README.md
-```
+- `/src/app` - Next.js app router pages
+- `/src/components` - React components
+- `/public` - Static assets
+- `/src/app/api` - API routes
 
-## Available Scripts
+## Technologies Used
 
-- `npm run dev` - Run the development server
-- `npm run build` - Build the production application
-- `npm run start` - Start the production server
-- `npm run lint` - Run ESLint
-- `npm run type-check` - Run TypeScript type checking
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+- OpenAI API
 
 ## Contributing
 

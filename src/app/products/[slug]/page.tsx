@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar';
+import WeightCalculator from '@/components/WeightCalculator';
 import { notFound } from 'next/navigation';
 
 const products = [
@@ -26,7 +27,8 @@ Key benefits include:
       width: 'Up to 20m',
       length: 'Custom lengths available',
       material: 'High-grade polyethylene',
-      warranty: '5 years'
+      warranty: '5 years',
+      density: 920 // kg/m³
     },
     applications: [
       'Commercial greenhouses',
@@ -219,6 +221,16 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                     <li key={index}>{application}</li>
                   ))}
                 </ul>
+
+                {/* Weight Calculator */}
+                <div className="mt-8">
+                  <WeightCalculator 
+                    density={product.specifications.density}
+                    defaultLength={1000} // 1m default
+                    defaultWidth={1000} // 1m default
+                    defaultThickness={0.15} // 150 microns default
+                  />
+                </div>
 
                 <div className="mt-8">
                   <a

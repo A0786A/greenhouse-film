@@ -120,10 +120,10 @@ export default function CheckoutPage() {
         // Create a shipping package for FreightClub
         const shippingPackage = {
           origin: {
-            address: "44075 Pipeline Plaza",
-            city: "Ashburn",
-            state: "VA",
-            zip: "20147",
+            address: "800 W 16th St",
+            city: "Long Beach",
+            state: "CA",
+            zip: "90813",
             country: "US"
           },
           destination: {

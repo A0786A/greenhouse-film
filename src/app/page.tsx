@@ -30,7 +30,7 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div className="p-4">
+              <div className="p-6">
                 <h3 className="text-lg font-bold mb-2 bg-red-500 text-black px-3 py-2 rounded-md">IRAC GREENHOUSE PLASTIC / COVER</h3>
                 <p className="text-2xl font-bold text-green-600 mb-3">Starting at $6.37</p>
                 <ul className="space-y-1 mb-4 text-sm">
@@ -56,7 +56,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <Link 
-                  href="/products/irac-greenhouse-plastic"
+                  href="/products/irac-greenhouse-plastic-cover"
                   className="inline-block w-32 bg-green-600 text-white text-center py-2.5 px-4 rounded-full hover:bg-green-700 transition-colors text-xs font-medium"
                 >
                   SHOP NOW
@@ -69,36 +69,36 @@ export default function Home() {
               <div className="relative w-full h-[400px] rounded-t-2xl">
                 <Image
                   src="/home/irac_plastic.webp"
-                  alt="Light Deprivation Plastic"
+                  alt="Clear Greenhouse Plastic"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   priority
                 />
               </div>
-              <div className="p-4">
-                <h3 className="text-lg font-bold mb-2 bg-yellow-500 text-black px-3 py-2 rounded-md">CLEAR GREENHOUSE PLASTIC</h3>
-                <p className="text-2xl font-bold text-green-600 mb-3">Starting at $4.77</p>
+              <div className="p-6">
+                <h3 className="text-lg font-bold mb-2 bg-blue-500 text-black px-3 py-2 rounded-md">CLEAR GREENHOUSE PLASTIC</h3>
+                <p className="text-2xl font-bold text-green-600 mb-3">Starting at $5.47</p>
                 <ul className="space-y-1 mb-4 text-sm">
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Allows 90% light for maximum sun exposure
+                    90% light transmittance for maximum sunlight
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    25% diffusion ensures proper light distribution
+                    6 mil thickness for durability
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Strong 6 mil plastic for all-weather use
+                    Widths from 12 to 60 feet
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Widths range from 12 to 60 feet
+                    Custom length cutting available
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Cut to your greenhouse size
+                    Low light diffusion (25%) for direct sunlight
                   </li>
                 </ul>
                 <Link 
@@ -113,16 +113,16 @@ export default function Home() {
             {/* Diffused Greenhouse Plastic */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-200">
               <div className="relative w-full h-[400px] rounded-t-2xl">
-        <Image
+                <Image
                   src="/home/irac_plastic.webp"
                   alt="Diffused Greenhouse Plastic"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          priority
-        />
+                  priority
+                />
               </div>
-              <div className="p-4">
+              <div className="p-6">
                 <h3 className="text-lg font-bold mb-2 bg-orange-500 text-black px-3 py-2 rounded-md">DIFFUSED (White) GREENHOUSE PLASTIC</h3>
                 <p className="text-2xl font-bold text-green-600 mb-3">Starting at $8.47</p>
                 <ul className="space-y-1 mb-4 text-sm">
@@ -137,15 +137,14 @@ export default function Home() {
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
                     Reflects heat to prevent overheating
-          </li>
+                  </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
                     Custom cut for a perfect greenhouse fit
-          </li>
-                 
+                  </li>
                 </ul>
                 <Link 
-                  href="/products/diffused-greenhouse-plastic"
+                  href="/products/diffused-white-greenhouse-plastic"
                   className="inline-block w-32 bg-green-600 text-white text-center py-2.5 px-4 rounded-full hover:bg-green-700 transition-colors text-xs font-medium"
                 >
                   SHOP NOW
@@ -153,53 +152,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Duplicate IRAC Greenhouse Plastic */}
-            <div className="bg-white rounded-2xl shadow-lg border border-gray-200">
-              <div className="relative w-full h-[400px] rounded-t-2xl">
-                <Image
-                  src="/home/poly_plastic_3-yrs.webp"
-                  alt="HOOP HOUSE / POLY PLASTIC"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  priority
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-lg font-bold mb-2 bg-green-500 text-black px-3 py-2 rounded-md">HOOP HOUSE / POLY PLASTIC</h3>
-                <p className="text-2xl font-bold text-green-600 mb-3">Starting at $8.13</p>
-                <ul className="space-y-1 mb-4 text-sm">
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Infared additives keep head inside longer
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    65-70% diffusion ensures even lighting
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    6 mil thick for durability in all seasons
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Designed for FL & CA growing conditions
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                     Warranty valid only in FL & CA
-                  </li>
-                </ul>
-                <Link 
-                  href="/products/irac-greenhouse-plastic"
-                  className="inline-block w-32 bg-green-600 text-white text-center py-2.5 px-4 rounded-full hover:bg-green-700 transition-colors text-xs font-medium"
-                >
-                  SHOP NOW
-                </Link>
-              </div>
-            </div>
-
-            {/* Duplicate Clear Greenhouse Plastic */}
+            {/* Light Deprivation Plastic */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-200">
               <div className="relative w-full h-[400px] rounded-t-2xl">
                 <Image
@@ -211,33 +164,29 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div className="p-4">
-                <h3 className="text-lg font-bold mb-2 bg-black text-white px-3 py-2 rounded-md">LIGHT DEPRIVATION PLASTIC</h3>
-                <p className="text-2xl font-bold text-green-600 mb-3">Starting at $9.96</p>
+              <div className="p-6">
+                <h3 className="text-lg font-bold mb-2 bg-purple-500 text-black px-3 py-2 rounded-md">LIGHT DEPRIVATION PLASTIC</h3>
+                <p className="text-2xl font-bold text-green-600 mb-3">Starting at $7.47</p>
                 <ul className="space-y-1 mb-4 text-sm">
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    100% blackout for total light control
+                    100% light blocking capability
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Reversible black and white for flexible use
+                    6 mil thickness for durability
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    UV-resistant for long-term greenhouse protection
+                    Perfect for light control
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    6 mil thickness prevents tearing
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Custom cut for different greenhouse sizes
+                    Custom cut to your specifications
                   </li>
                 </ul>
                 <Link 
-                  href="/products/clear-greenhouse-plastic"
+                  href="/products/light-deprivation-plastic"
                   className="inline-block w-32 bg-green-600 text-white text-center py-2.5 px-4 rounded-full hover:bg-green-700 transition-colors text-xs font-medium"
                 >
                   SHOP NOW
@@ -245,11 +194,11 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Duplicate Diffused Greenhouse Plastic */}
+            {/* Over Winter Plastic */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-200">
               <div className="relative w-full h-[400px] rounded-t-2xl">
-            <Image
-                  src="/home/plastic_1-2-yrs.webp"
+                <Image
+                  src="/home/irac_plastic.webp"
                   alt="Over Winter Plastic"
                   fill
                   className="object-contain"
@@ -257,34 +206,71 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div className="p-4">
-                <h3 className="text-lg font-bold mb-2 bg-blue-500 text-black px-3 py-2 rounded-md">OVER WINTER PLASTIC</h3>
-                <p className="text-2xl font-bold text-green-600 mb-3">Starting at $5.44</p>
+              <div className="p-6">
+                <h3 className="text-lg font-bold mb-2 bg-yellow-500 text-black px-3 py-2 rounded-md">OVER WINTER PLASTIC</h3>
+                <p className="text-2xl font-bold text-green-600 mb-3">Starting at $4.47</p>
                 <ul className="space-y-1 mb-4 text-sm">
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Designed for seasonal crop protection
+                    5 mil thickness for winter protection
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Tough material resists tearing and stretching
+                    Better tear strength
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Holds in warmth and reduces energy loss
+                    55% light diffusion
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    5 mil thickness for lightweight yet strong coverage
+                    Custom cut to your needs
                   </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Available in clear or 55% diffusion options
-                  </li>
-                  
                 </ul>
                 <Link 
-                  href="/products/diffused-greenhouse-plastic"
+                  href="/products/over-winter-plastic"
+                  className="inline-block w-32 bg-green-600 text-white text-center py-2.5 px-4 rounded-full hover:bg-green-700 transition-colors text-xs font-medium"
+                >
+                  SHOP NOW
+                </Link>
+              </div>
+            </div>
+
+            {/* Hoop House Plastic */}
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-200">
+              <div className="relative w-full h-[400px] rounded-t-2xl">
+                <Image
+                  src="/home/irac_plastic.webp"
+                  alt="Hoop House Plastic"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold mb-2 bg-green-500 text-black px-3 py-2 rounded-md">HOOP HOUSE PLASTIC</h3>
+                <p className="text-2xl font-bold text-green-600 mb-3">Starting at $3.47</p>
+                <ul className="space-y-1 mb-4 text-sm">
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    6 mil thickness for durability
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Perfect for hoop houses
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Custom cut to your specifications
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Available in various widths
+                  </li>
+                </ul>
+                <Link 
+                  href="/products/hoop-house-poly-plastic"
                   className="inline-block w-32 bg-green-600 text-white text-center py-2.5 px-4 rounded-full hover:bg-green-700 transition-colors text-xs font-medium"
                 >
                   SHOP NOW

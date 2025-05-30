@@ -5,25 +5,25 @@ import Link from 'next/link';
 
 const relatedProducts = [
   {
-    id: 'diffused-white',
+    id: 'diffused-greenhouse-plastic',
     name: '6 Mil DIFFUSED (White) GREENHOUSE PLASTIC 55% LIGHT DIFFUSION AND REFLECTED HEAT',
     image: '/home/irac_plastic.webp',
     category: 'GREENHOUSE PLASTIC / COVER'
   },
   {
-    id: 'clear-plastic',
+    id: 'clear-greenhouse-plastic',
     name: '6 Mil CLEAR GREENHOUSE PLASTIC LIGHT DIFFUSION (25%) & HIGH LIGHT TRANSMITTANCE',
     image: '/home/irac_plastic.webp',
     category: 'GREENHOUSE PLASTIC / COVER'
   },
   {
-    id: 'over-winter',
+    id: 'over-winter-plastic',
     name: '5 Mil OVER WINTER PLASTIC BETTER TEAR STRENGTH AND 55% LIGHT DIFFUSION',
     image: '/home/irac_plastic.webp',
     category: 'GREENHOUSE PLASTIC / COVER'
   },
   {
-    id: 'light-deprivation',
+    id: 'light-deprivation-plastic',
     name: 'LIGHT DEPRIVATION PLASTIC 100% BLOCK SUNLIGHT PROTECTION 6 Mil',
     image: '/home/irac_plastic.webp',
     category: 'GREENHOUSE PLASTIC / COVER'

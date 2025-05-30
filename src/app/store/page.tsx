@@ -68,7 +68,7 @@ export default function StorePage() {
                   </li>
                 </ul>
                 <Link 
-                  href="/products/irac-greenhouse-plastic"
+                  href="/products/irac-greenhouse-plastic-cover"
                   className="inline-block w-32 bg-green-600 text-white text-center py-2.5 px-4 rounded-full hover:bg-green-700 transition-colors text-xs font-medium"
                 >
                   SHOP NOW
@@ -156,7 +156,7 @@ export default function StorePage() {
                   </li>
                 </ul>
                 <Link 
-                  href="/products/diffused-greenhouse-plastic"
+                  href="/products/diffused-white-greenhouse-plastic"
                   className="inline-block w-32 bg-green-600 text-white text-center py-2.5 px-4 rounded-full hover:bg-green-700 transition-colors text-xs font-medium"
                 >
                   SHOP NOW
@@ -202,7 +202,7 @@ export default function StorePage() {
                   </li>
                 </ul>
                 <Link 
-                  href="/products/irac-greenhouse-plastic"
+                  href="/products/hoop-house-poly-plastic"
                   className="inline-block w-32 bg-green-600 text-white text-center py-2.5 px-4 rounded-full hover:bg-green-700 transition-colors text-xs font-medium"
                 >
                   SHOP NOW
@@ -248,7 +248,7 @@ export default function StorePage() {
                   </li>
                 </ul>
                 <Link 
-                  href="/products/clear-greenhouse-plastic"
+                  href="/products/light-deprivation-plastic"
                   className="inline-block w-32 bg-green-600 text-white text-center py-2.5 px-4 rounded-full hover:bg-green-700 transition-colors text-xs font-medium"
                 >
                   SHOP NOW
@@ -294,7 +294,7 @@ export default function StorePage() {
                   </li>
                 </ul>
                 <Link 
-                  href="/products/diffused-greenhouse-plastic"
+                  href="/products/over-winter-plastic"
                   className="inline-block w-32 bg-green-600 text-white text-center py-2.5 px-4 rounded-full hover:bg-green-700 transition-colors text-xs font-medium"
                 >
                   SHOP NOW

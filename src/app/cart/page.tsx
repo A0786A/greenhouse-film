@@ -3,21 +3,29 @@
 import { useCart } from '@/context/CartContext';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
+// Helper function to format currency
+const formatCurrency = (amount: number) => {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(amount);
+};
+
 export default function CartPage() {
+  const router = useRouter();
   const { items, removeFromCart, updateQuantity, total, clearCart } = useCart();
   const [isCheckingOut, setIsCheckingOut] = useState(false);
 
-  const handleCheckout = async () => {
-    setIsCheckingOut(true);
-    // Here you would integrate with your payment processor
-    // For now, we'll just simulate a successful checkout
-    setTimeout(() => {
-      clearCart();
-      setIsCheckingOut(false);
-      alert('Order placed successfully!');
-    }, 2000);
+  // Calculate total weight
+  const totalWeight = items.reduce((sum, item) => sum + (item.weight * item.quantity), 0);
+
+  const handleCheckout = () => {
+    router.push('/checkout');
   };
 
   if (items.length === 0) {
@@ -42,7 +50,15 @@ export default function CartPage() {
   return (
     <div className="min-h-screen bg-gray-50 pt-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Shopping Cart</h1>
+        <div className="flex justify-between items-center mb-8">
+          <h1 className="text-3xl font-bold text-gray-900">Shopping Cart</h1>
+          <Link 
+            href="/store" 
+            className="inline-block bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition-colors"
+          >
+            Continue Shopping
+          </Link>
+        </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Cart Items */}
@@ -87,7 +103,7 @@ export default function CartPage() {
                     </div>
                     <div className="ml-6">
                       <p className="text-lg font-medium text-gray-900">
-                        Total: ${(item.price * item.quantity).toFixed(2)}
+                        {formatCurrency(item.price * item.quantity)}
                       </p>
                     </div>
                   </div>
@@ -103,7 +119,11 @@ export default function CartPage() {
               <div className="space-y-4">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Subtotal</span>
-                  <span className="text-gray-900">Total: ${total.toFixed(2)}</span>
+                  <span className="text-gray-900">{formatCurrency(total)}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Total Weight</span>
+                  <span className="text-gray-900">{totalWeight.toFixed(2)} lbs</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Shipping</span>
@@ -112,7 +132,7 @@ export default function CartPage() {
                 <div className="border-t border-gray-200 pt-4">
                   <div className="flex justify-between">
                     <span className="text-lg font-medium text-gray-900">Total</span>
-                    <span className="text-lg font-medium text-gray-900">Total: ${total.toFixed(2)}</span>
+                    <span className="text-lg font-medium text-gray-900">{formatCurrency(total)}</span>
                   </div>
                 </div>
                 <button
